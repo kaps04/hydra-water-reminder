@@ -1,0 +1,19 @@
+
+{
+  "manifest_version": 3,
+  "name": "Hydra — Water Reminder",
+  "version": "1.0.0",
+  "description": "Gentle reminders to drink water throughout your day.",
+  "permissions": [
+    "alarms",
+    "notifications",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Hydra Water Reminder"
+  }
+}

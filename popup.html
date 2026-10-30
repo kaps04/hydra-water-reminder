@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydra — Water Reminder</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div class="logo">💧</div>
+      <div>
+        <h1>hydra<span>.</span></h1>
+        <p class="subtitle">A little reminder to care for you</p>
+      </div>
+    </header>
+
+    <section class="welcome">
+      <p class="eyebrow">YOUR DAILY WELLNESS</p>
+      <h2>Time to hydrate?</h2>
+      <p class="description">
+        Small sips, steady habits. Let's make hydration effortless.
+      </p>
+    </section>
+    <section class="tracker">
+  <div class="tracker-heading">
+    <div>
+      <p class="eyebrow">YOUR DAILY PROGRESS</p>
+      <h2>Stay hydrated!</h2>
+    </div>
+    <span class="water-icon">💧</span>
+  </div>
+
+  <div class="water-progress">
+    <div class="water-numbers">
+      <span><strong id="waterIntake">0</strong> ml</span>
+      <span id="waterGoal">2000 ml goal</span>
+    </div>
+
+    <div class="progress-track">
+      <div id="progressFill" class="progress-fill"></div>
+    </div>
+
+    <p id="progressMessage">Let's get started!</p>
+  </div>
+
+  <button id="addWaterButton" class="primary-button">
+    + Add a glass · 250 ml
+  </button>
+
+  <p class="glass-count">
+    Glasses today: <strong id="glassCount">0</strong>
+  </p>
+</section>
+    <section class="settings">
+      <label for="interval">Remind me every</label>
+      <select id="interval">
+        
+        <option value="30">30 minutes</option>
+        <option value="45" selected>45 minutes</option>
+        <option value="60">60 minutes</option>
+      </select>
+
+      <div class="status-row">
+        <span class="status-dot" id="statusDot"></span>
+        <span id="statusText">Reminders are paused</span>
+      </div>
+
+      <button id="toggleButton" class="primary-button">
+        Start reminders
+      </button>
+
+      <button id="testButton" class="secondary-button">
+        Send a test notification
+      </button>
+    </section>
+
+    <footer>Made with care ♡ one sip at a time</footer>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>

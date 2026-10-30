@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 340px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #292747;
+  background: #f7f6ff;
+}
+
+.app {
+  padding: 22px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: #e8e4ff;
+  font-size: 25px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 25px;
+  letter-spacing: -1px;
+}
+
+h1 span,
+footer span {
+  color: #7c70df;
+}
+
+.subtitle {
+  margin: 3px 0 0;
+  font-size: 11px;
+  color: #85829f;
+}
+
+.welcome {
+  margin-top: 27px;
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #e9e5ff, #e5f3ff);
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #7468c8;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  letter-spacing: -0.7px;
+}
+
+.description {
+  margin: 0;
+  color: #696783;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.settings {
+  margin-top: 24px;
+}
+
+.settings label {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e4e1f4;
+  border-radius: 12px;
+  outline: none;
+  background: white;
+  color: #383552;
+  font-size: 13px;
+}
+
+.status-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 19px 0;
+  color: #77748e;
+  font-size: 11px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #aaa6bb;
+}
+
+.status-dot.active {
+  background: #4bbf96;
+  box-shadow: 0 0 0 4px #e1f7ed;
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  transition: transform 0.15s, opacity 0.15s;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.primary-button {
+  color: white;
+  background: linear-gradient(100deg, #8072e5, #6d9ce9);
+  box-shadow: 0 6px 14px #8274df30;
+}
+
+.secondary-button {
+  margin-top: 9px;
+  color: #6c62b7;
+  background: white;
+  border: 1px solid #e8e4fa;
+}
+
+footer {
+  margin-top: 24px;
+  text-align: center;
+  color: #9995af;
+  font-size: 10px;
+}
+/* Daily hydration tracker */
+
+.tracker {
+  background: #f0edff;
+  border: 1px solid #e1dcff;
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+.tracker-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tracker-heading h2 {
+  margin: 5px 0 15px;
+  color: #353052;
+  font-size: 19px;
+}
+
+.water-icon {
+  font-size: 30px;
+}
+
+.water-numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #49436c;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.water-numbers strong {
+  font-size: 27px;
+  color: #7765c9;
+}
+
+.progress-track {
+  height: 10px;
+  background: #dcd6f5;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #8e7be8, #68b8df);
+  border-radius: 20px;
+  transition: width 0.4s ease;
+}
+
+#progressMessage {
+  color: #77708f;
+  font-size: 12px;
+  margin: 10px 0 15px;
+}
+
+.glass-count {
+  text-align: center;
+  color: #77708f;
+  font-size: 12px;
+  margin-bottom: 0;
+}
